@@ -1,5 +1,5 @@
 terraform {
-  backend "s3" "a" {
+  backend "s3" {
     bucket = "app-new-21-mybucket"
     acl = "private"
   
