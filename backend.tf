@@ -1,5 +1,4 @@
-terraform {
-  backend "s3" {
+  backend "s3" "c"{
     bucket = "app-new-21-mybucket"
     acl = "private"
   
@@ -8,5 +7,4 @@ terraform {
     Dep = "IT"
     Group = "April"
  }
-  }
 }
