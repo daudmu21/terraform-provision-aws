@@ -1,10 +1,8 @@
-resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-test-dda21"
-  acl    = "private"
-
-   tags = {
-        Name = "Dev"
-        Dept = "IT"
-        Group = "April"
-    }
+terraform {
+  backend "s3" {
+    region  = "us-west-2"
+    bucket  = "elasticbeanstalk-us-west-1-340873333260"
+    key     = "dev.tfstate"
+    encrypt = true
+  }
 }
