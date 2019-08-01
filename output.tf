@@ -13,5 +13,5 @@ output "username" {
    value = "ec-user2"
 }
 output "public_ip" {
-   value = "${aws_instance.web1.public_ip}"
+   value = "${aws_instance.web.public_ip}"
 }
