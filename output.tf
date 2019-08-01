@@ -6,7 +6,7 @@ output "bucketname" {
   value = "${aws_s3_bucket.b.bucket}"
 }
 output "ID" {
-  value = "${aws_instance.web1.id}"
+  value = "${aws_instance.web.id}"
 }
 
 output "username" {
