@@ -1,6 +1,10 @@
-  terraform {
-  backend "s3" "c"{
-    bucket = "app-new-21-mybucket"
-    acl = "private"
- }
+resource "aws_s3_bucket" "b" {
+  bucket = "my-tf-test-dda21"
+  acl    = "private"
+
+   tags = {
+        Name = "Dev"
+        Dept = "IT"
+        Group = "April"
+    }
 }
