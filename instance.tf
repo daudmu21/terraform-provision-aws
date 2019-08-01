@@ -7,7 +7,7 @@ resource "aws_instance" "web" {
 
 
 tags = {
-    Name = "Dev"
+    Name = "${var.Env}"
     Dep = "IT"
     Group = "April"
  }
